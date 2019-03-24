@@ -1,0 +1,53 @@
+.piano {
+    height: 700px;
+    max-width: 666px;
+    border: solid black 2px;
+    display: flex;
+    position: relative;
+}
+
+.key {
+    width: 70px;
+    height: 500px;
+    border: solid black 2px;
+    position: relative;
+    z-index: 2;
+    transition: all .07s ease;
+}
+
+.playing {
+    transform: scale(.9)
+}
+
+.black {
+    background-color: black;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 300px;
+}
+
+.key[data-key="87"] {
+    left: 7%;
+}
+
+.key[data-key='69'] {
+    left: 18%;
+}
+
+.key[data-key='82'] {
+    left: 29%;
+}
+
+.key[data-key='89'] {
+    left: 51%;
+}
+
+.key[data-key='85'] {
+    left: 62.5%;
+}
+
+.key[data-key="79"] {
+    left: 85%;
+}
