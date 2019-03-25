@@ -1,9 +1,23 @@
+html {
+    background-image: url('https://images.unsplash.com/photo-1551554781-c46200ea959d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80')
+}
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 0 0 1rem goldenrod;
+}
 .piano {
-    height: 700px;
     max-width: 666px;
-    border: solid black 2px;
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 20px;
     display: flex;
     position: relative;
+    background-color: white;
+    margin: 0 auto;
 }
 
 .key {
@@ -13,10 +27,15 @@
     position: relative;
     z-index: 2;
     transition: all .07s ease;
+    background-color: aliceblue;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .playing {
-    transform: scale(.9)
+    transform: scale(.9);
+    border-color: blue;
+    box-shadow: 0 0 1rem blue;
 }
 
 .black {
@@ -29,15 +48,15 @@
 }
 
 .key[data-key="87"] {
-    left: 7%;
+    left: 9%;
 }
 
 .key[data-key='69'] {
-    left: 18%;
+    left: 20%;
 }
 
 .key[data-key='82'] {
-    left: 29%;
+    left: 31%;
 }
 
 .key[data-key='89'] {
@@ -49,5 +68,13 @@
 }
 
 .key[data-key="79"] {
-    left: 85%;
+    left: 83%;
+}
+
+kbd {
+    display: block;
+    position: absolute;
+    bottom: 7px;
+    left: 10px;
+    font-size: 20px;
 }
