@@ -1,5 +1,7 @@
 #Virtual JS Piano
 
+Deployed Application - https://virtualjspiano.netlify.com/
+
 I've created a virtual piano made from vanilla JavaScript.
 
 The idea came from the JavaScript30 Challenge by Wes Bos and his virtual drumkit tutorial.
